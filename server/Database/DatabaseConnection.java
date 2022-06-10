@@ -14,8 +14,8 @@ public class DatabaseConnection {
     ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
 
     public DatabaseConnection() throws Exception{
-            String jdbcURL = "";
-            String user = "";
+            String jdbcURL = "jdbc:postgresql://pg:5432/studs";
+            String user = "s335076";
             String password = "";
 
             try {
