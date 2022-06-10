@@ -2,15 +2,12 @@ package com.company.server.Programm;
 
 import com.company.common.Net.CommandResult;
 import com.company.common.Net.Request;
-import com.company.common.Net.ResultStatus;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
-import java.net.Socket;
 import java.nio.channels.SocketChannel;
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;

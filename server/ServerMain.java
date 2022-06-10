@@ -1,9 +1,7 @@
 package com.company.server;
 
 import com.company.server.Database.DatabaseConnection;
-import com.company.common.Net.CommandResult;
-import com.company.common.Net.Request;
-import com.company.common.Net.ResultStatus;
+
 import com.company.server.Programm.ExecutionService;
 import com.company.server.Programm.RequestReaderRunnable;
 
@@ -13,7 +11,7 @@ import java.nio.channels.*;
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ServerMain {
@@ -56,9 +54,8 @@ public class ServerMain {
 
         ExecutionService executionService;
         try{
-            System.out.println(System.getProperty("user.dir") + "\\database-connection.yaml");
             DatabaseConnection db = new DatabaseConnection();
-            System.out.println("Файл с данными для подключения к БД найден и подключение успешно установлено.");
+            System.out.println("Подключение успешно установлено.");
 
             executionService = new ExecutionService(db);
         }
